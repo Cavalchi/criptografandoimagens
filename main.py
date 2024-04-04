@@ -5,7 +5,7 @@ from PIL import Image
 
 def encrypt_image(image_path, key):
     img = Image.open(image_path)
-    pixels = img.load()
+    pixels = img.load() 
 
     width, height = img.size
     for y in range(height):
