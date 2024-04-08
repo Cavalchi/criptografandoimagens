@@ -16,7 +16,6 @@ def encrypt_image(image_path, key):
                 r, g, b, a = pixel
             else:
                 r, g, b = pixel
-
             r = (r * key) % 256
             g = (g * key) % 256
             b = (b * key) % 256
